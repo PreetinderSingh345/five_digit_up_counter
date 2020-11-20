@@ -1,0 +1,242 @@
+/* body */
+
+body{
+    
+    margin: 0;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: sans-serif;
+    color: darkslategray;
+    background-image: linear-gradient(to top right, skyblue, #fde9ec);
+    min-width: 320px;
+    min-height: 420px;
+
+}
+
+/* heading */
+
+#heading{
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px 0;
+    background-color: rgb(202, 248, 233);
+    border-radius: 5px;    
+    min-height: 70px;
+
+}
+
+/* counter heading input button container */
+
+#counter-heading-input-button{
+
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 125px;
+
+}
+
+/* counter heading */
+
+#counter-heading{
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(250, 228, 232);
+    border-radius: 5px;
+    padding: 5px 0;
+
+}
+
+/* counter input button container */
+
+#counter-input-button{
+
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: rgb(193, 240, 193);
+
+}
+
+/* counter input and button styling */
+
+.counter-input-button-styling{
+
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 2px outset grey;
+    background-color: lightgoldenrodyellow;
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+
+/* counter input */
+
+#counter-input{
+
+    outline: none;        
+
+}
+
+#counter-input:focus{
+
+    box-shadow: 0 0 4px 4px rgb(125, 228, 125);
+
+}
+
+/* adjusting the counter input button container according to the device width */
+
+@media only screen and (max-width: 350px){
+
+    body #counter-input-button{
+
+        height: 40%;
+        flex-direction: column;    
+        padding: 10px;
+
+    }
+
+    body #counter-input{
+
+        height: 30px;
+        margin-bottom: 10px;
+
+    }
+
+    body #counter-button{
+
+        height: 30px;
+
+    }    
+
+}
+
+/* adjusting the outer counter container according to the device width */
+
+@media only screen and (max-width: 400px){
+
+    body #counter-container-outer{
+
+        width: 90vw;
+
+    }
+
+}
+
+/* counter button */
+
+#counter-button{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    font-size: 1.1rem;
+    cursor: pointer;
+
+}
+
+#counter-button:hover{
+
+    box-shadow: 0 0 4px 4px rgb(125, 228, 125);
+
+}
+
+/* message to be shown when the target has been reached */
+
+.message{
+
+    opacity: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: opacity 0.1s ease-in-out;
+
+}
+
+/* outer counter container */
+
+#counter-container-outer{
+        
+    height: 25vh;
+    width: 60vw;    
+    align-self: center; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center; 
+    border-radius: 20px;
+    background-color: lightslategray;    
+    box-shadow: 0 0 4px 4px whitesmoke;
+    min-height: 105px;
+
+}
+
+/* inner counter container */
+
+.counter-container-inner{
+     
+    height: 100px;           
+    width: 15%;
+    overflow: hidden;        
+
+}
+
+/* flex center to center the numbers inside the current and the next value containers */
+
+.flex-center{
+
+    height: inherit;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;    
+    border-radius: 10px;
+    border-top: 4px outset darkslategrey;
+    background-color: gold;
+    box-sizing: border-box;
+
+}
+
+/* shift up transition */
+
+.shift-up{
+    
+    transition: transform 0.5s ease-in-out;    
+    transform: translateY(-100px);
+
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar{
+    height: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb{
+
+    height: 10px;    
+    background-color: grey;
+    border-radius: 5px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: darkslategrey;
+}

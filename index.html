@@ -1,0 +1,144 @@
+<html>
+    <head>
+
+        <title>Five Digit Up Counter</title>
+
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <!-- above is the link to the external stylesheet -->
+
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <!-- meta tag for adjusting the content according to the device width -->
+
+    </head>
+
+    <body>
+
+        <!-- heading -->
+
+        <div id="heading">
+            Five Digit Up Counter
+        </div>
+
+        <!-- counter heading input button container -->
+        
+        <div id="counter-heading-input-button">
+
+            <!-- counter heading -->
+
+            <div id="counter-heading">
+                Enter a value between 0 and 99999
+            </div>
+
+            <!-- counter input button container -->
+
+            <div id="counter-input-button">
+
+                <!-- counter input -->
+
+                <input type="number" placeholder="Enter the number" id="counter-input" name="number" required class="counter-input-button-styling">
+
+                <!-- counter button -->
+
+                <div id="counter-button" class="counter-input-button-styling">
+                    Start Counter
+                </div>
+
+            </div>
+    
+        </div>
+
+        <!-- message to show when the target has been reached -->
+
+        <div class="message">
+            target
+        </div>
+
+        <!-- outer counter container -->
+
+        <div id="counter-container-outer">
+
+            <!-- 5 inner counter containers for the 5 digits -->
+
+            <div class="counter-container-inner">
+
+                <!-- each inner counter container has a current value and the next value to be shown element and this container represents the 5th digit from the left -->
+
+                <div id="curr-val-5" class="flex-center">
+                    0
+                </div>
+
+                <div id="next-val-5" class="flex-center">
+                    1
+                </div>
+
+            </div>
+
+            <!-- container representing the 4th digit from the left -->
+
+            <div class="counter-container-inner">
+
+                <div id="curr-val-4" class="flex-center">
+                    0
+                </div>
+
+                <div id="next-val-4" class="flex-center">
+                    1
+                </div>
+
+            </div>
+
+            <!-- container representing the 3rd digit from the left -->
+
+            <div class="counter-container-inner">
+
+                <div id="curr-val-3" class="flex-center">
+                    0
+                </div>
+
+                <div id="next-val-3" class="flex-center">
+                    1
+                </div>
+
+            </div>
+
+            <!-- container representing the 2nd digit from the left -->
+
+            <div class="counter-container-inner">
+
+                <div id="curr-val-2" class="flex-center">
+                    0
+                </div>
+
+                <div id="next-val-2" class="flex-center">
+                    1
+                </div>
+
+            </div>
+
+            <!-- container representing the 1st digit from the left -->
+
+            <div class="counter-container-inner">
+
+                <div id="curr-val-1" class="flex-center">
+                    0
+                </div>
+
+                <div id="next-val-1" class="flex-center">
+                    1
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- message to show when the target has been reached -->
+
+        <div class="message">
+            reached
+        </div>
+
+        <script type="text/javascript" src="./script.js"></script>
+        <!-- above is the link to the external js file -->
+
+    </body>
+</html>
