@@ -1,1 +1,3 @@
-This five digit up counter counts upto the number provided from 0 to 99999
+# Five Digit Up Counter
+
+- This five digit up counter counts upto the number provided from 0 to 99999
